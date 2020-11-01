@@ -7,9 +7,9 @@
     "lint": "eslint . --cache --cache-location ./node_modules/.cache/ --ignore-path .gitignore",
     "fix": "eslint . --fix --cache --cache-location ./node_modules/.cache/ --ignore-path .gitignore",
     "pretest": "npm run lint",
-    "test": "mocha --timeout 30000 test/*.js",
+    "test": "c8 mocha --timeout 30000 test/*.js",
     "release": "false",
-    "test-windows": "mocha --timeout 30000"
+    "test-windows": "c8 mocha --timeout 30000"
   },
   "renovate": {
     "extends": [
@@ -55,6 +55,7 @@
   },
   "devDependencies": {
     "better-than-before": "^1.0.0",
+    "c8": "^7.1.2",
     "chai": "^4.2.0",
     "conventional-changelog-core": "^4.2.0",
     "eslint": "^7.0.0",
