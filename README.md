@@ -6,6 +6,15 @@ A concrete implementation of the specification described at
 [conventionalcommits.org](https://conventionalcommits.org/) for automated
 CHANGELOG generation and version management.
 
+## FORK WARNING
+
+This is a fork of `conventional-changelog-conventionalcommits` with my proposed changes.
+The fork may or may not be kept up-to-date with upstream and will with most certanty be abandoned if upstream merges pull requests.
+Use with caution.
+
+List of propsed pull requests:
+
+* [PR-669: allow matching scope](https://github.com/conventional-changelog/conventional-changelog/pull/669)
 
 ## Indirect Usage (as preset)
 
